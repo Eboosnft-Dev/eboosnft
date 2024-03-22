@@ -32,7 +32,7 @@ export default async function LastSales() {
               width={1024}
               height={1024}
               alt={`Eboo #${node.metadata.tokenId}`}
-              src={node.metadata.raw.metadata.image}
+              src={node.metadata.image.originalUrl}
             />
             <div className="absolute bottom-4 right-4 bg-zinc-800 text-zinc-300 px-2 py-1 rounded text-sm shadow-lg">
               <div>Eboos #{node.metadata.tokenId}</div>
