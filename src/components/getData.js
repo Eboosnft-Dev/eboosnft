@@ -38,7 +38,7 @@ const getZoraData = cache(async () => {
     }),
   });
   const json = await res.json();
-  // console.log("res", json.data)
+  console.log("res", json.data)
   return json.data;
 });
 
