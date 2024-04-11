@@ -202,7 +202,10 @@ export default async function History() {
           </div>
         </HistoryMilestone>
         <HistoryMilestone date="17 Aout 2022" title={`Playlist DISCOVERY'BOOS`}>
-          <div className="text-xl lg:text-2xl"></div>
+          <div className="text-xl lg:text-2xl">
+            Le succès du concours musical et la création de la EboosTape vol 1 ont mis en lumière d'incroyables talents parmi nous. Pour célébrer cette richesse, nous avons lancé la Playlist des Eboos, une vitrine des talents musicaux de notre communauté.
+          </div>
+          <iframe src="https://open.spotify.com/embed/playlist/7zE6WTtnr2uTc2ZtFwfxBa?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </HistoryMilestone>
         <HistoryMilestone date="29 Aout 2022" title={`Suspension du mint`}>
           <div className="text-xl lg:text-2xl"></div>
@@ -216,6 +219,15 @@ export default async function History() {
           </div>
         </HistoryMilestone>
         <HistoryMilestone
+          date="20 Octobre 2022"
+          title={`NOCHE VITA (EBOOS TRACK #1)`}
+        >
+          <div className="text-xl lg:text-2xl">
+            Il s'agit d'un son réalisé à 100% par des membres de la communauté
+          </div>
+          <iframe src="https://open.spotify.com/embed/album/5xrfrLdqbolVH5flL9HXZl?utm_source=generator" width="100%" height="152" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </HistoryMilestone>
+        <HistoryMilestone
           date="1 Décembre 2022"
           title={`Calendrier de l'avent`}
         >
@@ -223,6 +235,43 @@ export default async function History() {
             Pendant tous le mois de Décembre un calendrier de l&apos;avent est
             organisé sur les réseaux sociaux du projet et 7 Eboos sont offerts
             en guise de lot.
+          </div>
+        </HistoryMilestone>
+        <HistoryMilestone
+          date="15 Février 2023"
+          title={`Achat de 2 Genuine undead pour le musée`}
+        >
+          <div className="text-xl lg:text-2xl">
+          </div>
+          <div className="flex">
+            <img
+              className="w-64 rounded m-4"
+              src="https://i.seadn.io/gcs/files/301a97901154ed681de348b40d9b6fe7.png?auto=format&dpr=1&w=1000"
+            />
+            <img
+              className="w-64 rounded m-4"
+              src="https://i.seadn.io/gcs/files/4051cb4158500f08b48825b90e60556d.png?auto=format&dpr=1&w=1000"
+            />
+          </div>
+        </HistoryMilestone>
+        <HistoryMilestone
+          date="2 Mai 2023"
+          title={`Achat de 0.2 ETH de PEPE$`}
+        >
+          <div className="text-xl lg:text-2xl">
+          </div>
+        </HistoryMilestone>
+        <HistoryMilestone
+          date="5 Mai 2023"
+          title={`Achat d'un Doodle pour le musée`}
+        >
+          <div className="text-xl lg:text-2xl">
+          </div>
+          <div className="flex">
+            <img
+              className="w-64 rounded m-4"
+              src="https://i.seadn.io/gcs/files/7df83c5c0a67a9bd9af61f20382a2674.png?auto=format&dpr=1&w=1000"
+            />
           </div>
         </HistoryMilestone>
       </div>

@@ -54,6 +54,7 @@ export default async function Home() {
         <a
           className="text-zinc-200 text-lg lg:text-xl hover:underline font-black"
           href="https://opensea.io/collection/eboos"
+          target="_blank"
         >
           Achète un Eboo
         </a>
@@ -82,6 +83,7 @@ export default async function Home() {
           <a
             className="text-zinc-200 text-lg lg:text-xl hover:underline font-black"
             href="https://opensea.io/collection/eboos"
+            target="_blank"
           >
             Découvre la collection
           </a>
@@ -105,6 +107,7 @@ export default async function Home() {
             <a
               className="text-zinc-200 text-lg lg:text-xl hover:underline font-black"
               href="https://opensea.io/collection/eboos"
+              target="_blank"
             >
               Achète un Eboo
             </a>
@@ -127,7 +130,7 @@ export default async function Home() {
                   <FontAwesomeIcon icon={faCheckToSlot} />
                 </div>
                 <div>
-                  Obtiens un droit de vote dans la gestion du Club et du Musée
+                  Obtiens un droit de vote dans la gestion de la trésorerie
                 </div>
               </div>
               <div className="py-4 flex items-center gap-6">
@@ -153,7 +156,7 @@ export default async function Home() {
       <Treasuries />
       <History />
       <Snapshots />
-      <Guild />
+      {/* <Guild /> */}
     </div>
   );
 }

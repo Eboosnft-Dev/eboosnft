@@ -1,8 +1,17 @@
 import Image from "next/image";
 import getSales from "../../components/getSales";
+import tokens from "../../tokens.json";
 
 export default async function LastSales() {
   const data = await getSales();
+
+  function getHash(tokenId) {
+    const START_INDEX = 1336;
+    const START_OFFSET = Math.floor((START_INDEX / 8192) * 512) * 16;
+    const index = (START_OFFSET + Number(tokenId)) % 8192;
+    const eboo = tokens[index];
+    return eboo.hash
+  }
 
   if (!data || !data.nftSales) {
     return <div>Données indisponibles.</div>;
@@ -23,7 +32,7 @@ export default async function LastSales() {
         </pre> */}
         {nftSales.map((node) => (
           <a
-            key={node.metadata.tokenId}
+            key={`${node.metadata.tokenId}${node.sellerFee.amount}`}
             className="h-64 w-64 md:h-72 md:w-72 snap-center md:snap-start md:scroll-ml-16 shrink-0 relative"
             href={`https://opensea.com/assets/ethereum/${process.env.EBOOS_CONTRACT_ADDRESS}/${node.metadata.tokenId}`}
           >
@@ -32,7 +41,7 @@ export default async function LastSales() {
               width={1024}
               height={1024}
               alt={`Eboo #${node.metadata.tokenId}`}
-              src={node.metadata.image.originalUrl}
+              src={`https://ipfs.io/ipfs/${getHash(node.metadata.tokenId)}`}
             />
             <div className="absolute bottom-4 right-4 bg-zinc-800 text-zinc-300 px-2 py-1 rounded text-sm shadow-lg">
               <div>Eboos #{node.metadata.tokenId}</div>

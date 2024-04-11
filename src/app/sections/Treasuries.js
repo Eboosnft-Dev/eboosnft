@@ -30,18 +30,17 @@ export default function Treasuries() {
             C&apos;est la communauté qui décide
           </div>
           <div className="text-zinc-400 text-xl lg:text-2xl max-w-2xl lg:max-w-3xl">
-            Deux trésoreries communautaires ont été mises en place et sont
-            créditées par le fondateur à mesure que le projet se dévelope.
+            Une trésorerie communautaire a été mise en place et protégé par un multi-sig, constitué de 7 keys keeper.
           </div>
         </div>
-        <div className="grid-cols-1 lg:grid-cols-2 grid w-full gap-8">
+        <div className="w-full gap-8">
           <div className="bg-gradient-to-br from-blue-700 to-indigo-500 rounded-2xl p-12 lg:p-16 text-rose-50 space-y-4 lg:space-y-8 shadow-2xl shadow-indigo-600/50">
             <div className="space-y-2">
-              <Heading2>Le Club</Heading2>
+              <Heading2>La Trésorerie</Heading2>
               <TreasuryWallet
-                address="0x5B...c020"
-                href="https://etherscan.io/address/0x5B6Fb436B3B672839aD1741189dd9D7ACAB6c020"
-                value="6.324"
+                address="0xCe4...4864"
+                href="https://etherscan.io/address/0xCe4a69B7Bf70C803e47E54D5E805ff4DbF954864"
+                value="7.192"
               />
             </div>
             <Lead>
@@ -55,8 +54,20 @@ export default function Treasuries() {
               d&apos;engagement il est soumis aux votes des membres sur la
               plateforme snapshot.
             </Lead>
+            <Lead>
+              La trésorerie est également composé d'un musée des Eboos. Un lieu dans lequel sont collectionnés des
+              NFT présentant un intérêt pour la communauté. Le musée permet aux
+              propriétaires d&apos;Eboos de pouvoir profiter des avantages de
+              différents projets sans avoir à en dépenser le prix.
+            </Lead>
+            <Lead>
+              Un possesseur d&apos;Eboos peut à tout
+              moment suggérer un projet NFT détaillé sur le Discord, si celui-ci
+              récolte assez d&apos;engagement, il est soumis aux votes des
+              membres sur la plateforme snapshot.
+            </Lead>
           </div>
-          <div className="bg-gradient-to-br from-red-700 to-rose-500 rounded-2xl p-12 lg:p-16 text-rose-50 space-y-4 lg:space-y-8 shadow-2xl shadow-rose-600/50">
+          {/* <div className="bg-gradient-to-br from-red-700 to-rose-500 rounded-2xl p-12 lg:p-16 text-rose-50 space-y-4 lg:space-y-8 shadow-2xl shadow-rose-600/50">
             <div className="space-y-2">
               <Heading2>Le Musée</Heading2>
               <TreasuryWallet
@@ -77,7 +88,7 @@ export default function Treasuries() {
               récolte assez d&apos;engagement, il est soumis aux votes des
               membres sur la plateforme snapshot.
             </Lead>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
