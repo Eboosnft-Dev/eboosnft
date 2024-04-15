@@ -18,7 +18,7 @@ const getLatestSalesDataWithMetadata = cache(async () => {
             order: 'desc',
             fromBlock: '0',
             toBlock: 'latest',
-            taker: 'BUYER',
+            taker: 'SELLER'
         });
 
         let enrichedSalesData = [];
