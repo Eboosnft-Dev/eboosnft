@@ -76,7 +76,7 @@ export default async function Home() {
               1 040
             </a>{" "}
             uniques NFT. Cette collection s&apos;adresse aux gens voulant
-            découvrir le fabuleux monde des NFT par le biais d&apos;un projet
+            découvrir le fabuleux  monde des NFT par le biais d&apos;un projet
             pas trop cher encadré par une communauté bienveillante.
           </div>
           <a

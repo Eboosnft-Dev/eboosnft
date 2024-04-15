@@ -281,7 +281,29 @@ export default async function History() {
           <div className="text-xl lg:text-2xl">
             EboosTrack #2 enregistrer au studio Grand Paris
           </div>
-          <iframe src="https://open.spotify.com/embed/album/7tCkBnFVsKYiOzH2UtBA8E?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>          </HistoryMilestone>
+          <iframe src="https://open.spotify.com/embed/album/7tCkBnFVsKYiOzH2UtBA8E?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </HistoryMilestone>
+        <HistoryMilestone
+          date="25 Aout 2023"
+          title={`Mise en place du Multi sig`}
+        >
+          <div className="text-xl lg:text-2xl">
+          Avant ce snapshot valider à 100% par la communauté, Le Motif détenait le rôle exclusif d'initiateur et de validateur des transactions du projet. Cette approche comportait un risque majeur, car elle reposait entièrement sur sa disponibilité. Pour atténuer ce risque, Le Motif lui même à décidé de proposer la mise en place d'un portefeuille multi-sig gérer par 7 signataires.
+          </div>
+        </HistoryMilestone>
+        <HistoryMilestone
+          date="11 Septembre 2023"
+          title={`Achat d'un MURAKAMI FLOWERS pour le musée`}
+        >
+          <div className="text-xl lg:text-2xl">
+          </div>
+          <div className="flex">
+            <img
+              className="w-64 rounded m-4"
+              src="https://i.seadn.io/gcs/files/b73370fafeeab72ac6e7fcb9c394a10c.png?auto=format&dpr=1&w=1000"
+            />
+          </div>
+        </HistoryMilestone>
       </div>
     </div>
   );
