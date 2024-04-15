@@ -288,7 +288,7 @@ export default async function History() {
           title={`Mise en place du Multi sig`}
         >
           <div className="text-xl lg:text-2xl">
-          Avant ce snapshot valider à 100% par la communauté, Le Motif détenait le rôle exclusif d'initiateur et de validateur des transactions du projet. Cette approche comportait un risque majeur, car elle reposait entièrement sur sa disponibilité. Pour atténuer ce risque, Le Motif lui même à décidé de proposer la mise en place d'un portefeuille multi-sig gérer par 7 signataires.
+          Avant ce snapshot valider à 100% par la communauté, Le Motif détenait le rôle exclusif d&apos;initiateur et de validateur des transactions du projet. Cette approche comportait un risque majeur, car elle reposait entièrement sur sa disponibilité. Pour atténuer ce risque, Le Motif lui même à décidé de proposer la mise en place d&apos;un portefeuille multi-sig gérer par 7 signataires.
           </div>
         </HistoryMilestone>
         <HistoryMilestone
