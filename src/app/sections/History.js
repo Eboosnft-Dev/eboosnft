@@ -203,7 +203,7 @@ export default async function History() {
         </HistoryMilestone>
         <HistoryMilestone date="17 Aout 2022" title={`Playlist DISCOVERY'BOOS`}>
           <div className="text-xl lg:text-2xl">
-            Le succès du concours musical et la création de la EboosTape vol 1 ont mis en lumière d'incroyables talents parmi nous. Pour célébrer cette richesse, nous avons lancé la Playlist des Eboos, une vitrine des talents musicaux de notre communauté.
+            Le succès du concours musical et la création de la EboosTape vol 1 ont mis en lumière d&apos;incroyables talents parmi nous. Pour célébrer cette richesse, nous avons lancé la Playlist des Eboos, une vitrine des talents musicaux de notre communauté.
           </div>
           <iframe src="https://open.spotify.com/embed/playlist/7zE6WTtnr2uTc2ZtFwfxBa?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </HistoryMilestone>
@@ -223,7 +223,7 @@ export default async function History() {
           title={`NOCHE VITA (EBOOS TRACK #1)`}
         >
           <div className="text-xl lg:text-2xl">
-            Il s'agit d'un son réalisé à 100% par des membres de la communauté
+            Il s&apos;agit d&apos;un son réalisé à 100% par des membres de la communauté
           </div>
           <iframe src="https://open.spotify.com/embed/album/5xrfrLdqbolVH5flL9HXZl?utm_source=generator" width="100%" height="152" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </HistoryMilestone>

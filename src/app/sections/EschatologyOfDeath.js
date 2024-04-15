@@ -31,7 +31,6 @@ export default function EschatologyOfDeath() {
           <a
             className="text-zinc-200 text-lg lg:text-xl flex hover:underline font-black"
             href="https://mint.fun/0x6C72accA401c4EaE5eB21a9EEba87EFf150959d6"
-            target="_blank"
           >
             Mint un NFT
           </a>

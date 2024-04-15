@@ -54,7 +54,6 @@ export default async function Home() {
         <a
           className="text-zinc-200 text-lg lg:text-xl hover:underline font-black"
           href="https://opensea.io/collection/eboos"
-          target="_blank"
         >
           Achète un Eboo
         </a>
@@ -83,7 +82,6 @@ export default async function Home() {
           <a
             className="text-zinc-200 text-lg lg:text-xl hover:underline font-black"
             href="https://opensea.io/collection/eboos"
-            target="_blank"
           >
             Découvre la collection
           </a>
@@ -107,7 +105,6 @@ export default async function Home() {
             <a
               className="text-zinc-200 text-lg lg:text-xl hover:underline font-black"
               href="https://opensea.io/collection/eboos"
-              target="_blank"
             >
               Achète un Eboo
             </a>

@@ -55,7 +55,7 @@ export default function Treasuries() {
               plateforme snapshot.
             </Lead>
             <Lead>
-              La trésorerie est également composé d'un musée des Eboos. Un lieu dans lequel sont collectionnés des
+              La trésorerie est également composé d&apos;un musée des Eboos. Un lieu dans lequel sont collectionnés des
               NFT présentant un intérêt pour la communauté. Le musée permet aux
               propriétaires d&apos;Eboos de pouvoir profiter des avantages de
               différents projets sans avoir à en dépenser le prix.
