@@ -48,8 +48,8 @@ export default async function Home() {
       <div className="px-8 flex flex-col items-center gap-4 lg:gap-6">
         <h1 className="flex flex-row items-center text-zinc-200 text-6xl lg:text-8xl font-black">
           <Image
-            width={160}
-            height={160}
+            width={130}
+            height={130}
             alt="The golden eboo"
             className="rounded-2xl"
             src="/images/logo_eboos.png"
