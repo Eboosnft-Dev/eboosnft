@@ -46,17 +46,27 @@ export default async function Home() {
   return (
     <div className="flex flex-col py-16 gap-16 lg:gap-32">
       <div className="px-8 flex flex-col items-center gap-4 lg:gap-6">
-        <h1 className="text-zinc-200 text-6xl lg:text-8xl font-black">Eboos</h1>
+        <h1 className="flex flex-row items-center text-zinc-200 text-6xl lg:text-8xl font-black">
+          <Image
+            width={160}
+            height={160}
+            alt="The golden eboo"
+            className="rounded-2xl"
+            src="/images/logo_eboos.png"
+          />
+          Eboos NFT
+        </h1>
         <div className="text-zinc-400 text-2xl lg:text-3xl text-center max-w-md lg:max-w-xl">
           Ce sera probablement ton premier NFT mais certainement pas ton
           dernier...
         </div>
-        <a
+        {/* <a
           className="text-zinc-200 text-lg lg:text-xl hover:underline font-black"
           href="https://opensea.io/collection/eboos"
         >
-          Achète un Eboo
-        </a>
+          Acheter un Eboo
+        </a> */}
+        <a href="https://opensea.io/collection/eboos" target={"_blank"} className="text-xl scale-110 rounded-lg px-4 py-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-blue-100 duration-300 shadow-lg shadow-blue-500/50">Acheter un Eboo</a>
       </div>
       <div className="px-8 sm:max-w-screen-sm lg:max-w-screen-lg mx-auto lg:grid grid-cols-12 gap-16">
         <div className="col-span-4 flex flex-col justify-center h-full mb-8">
