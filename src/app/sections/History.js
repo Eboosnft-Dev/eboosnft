@@ -125,7 +125,7 @@ export default async function History() {
         </HistoryMilestone>
         <HistoryMilestone date="25 Avril 2022" title="Airdrop Eboogotchi">
           <div className="text-xl lg:text-2xl">
-            Eboogotchi, une jeu de type tamagotchi, est dévelopé et déployé sur
+            Eboogotchi, un jeu de type tamagotchi, est dévelopé et déployé sur
             la blockchain par Le Motif. Les possesseurs de Eboos en prennent
             soin jour et nuit jusqu&apos;à son décès permanent le 28 Avril.
           </div>
