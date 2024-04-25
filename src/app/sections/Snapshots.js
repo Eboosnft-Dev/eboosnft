@@ -37,6 +37,13 @@ const getLatestSnapshots = async () => {
   return json?.data?.proposals;
 };
 
+const snapshotRules = [
+  "Poser une question claire à la communauté dans le titre celle-ci doit voter POUR, CONTRE ou VOTE BLANC.",
+  "Préciser un montant précis en ETH et une explication de comment celui-ci sera utilisé",
+  "Ne pas exposer la trésorerie à une “51% Attack”",
+  "Atteindre un quorum de 100",
+]
+
 const Snapshot = ({ id, title, choices, scores, scores_total, body }) => {
   const winningScore = scores.reduce((max, score) => {
     return score > max ? score : max;
@@ -120,17 +127,10 @@ export default async function Treasuries() {
             <div className="p-8 lg:p-12 text-left flex flex-col gap-4 lg:gap-8  rounded-2xl justify-center">
               <div className=" gap-4 flex flex-col text-lg space-y-4">
                 <Lead className="font-black text-zinc-300">
-                  Les 6 règles d&apos;un snapshot
+                  Les {snapshotRules.length} règles d&apos;un snapshot
                 </Lead>
                 <ul className="text-base text-zinc-400 flex flex-col divide-y divide-zinc-700/75">
-                  {[
-                    "Poser une question claire à la communauté dans le titre- celle-ci doit voter POUR, CONTRE ou VOTE BLANC.",
-                    "Préciser un montant précis en ETH et une explication de comment celui-ci sera utilisé",
-                    "Ne pas exposer la trésorerie à une “51% Attack”",
-                    "Si le snapshot concerne Le Club, ajouter une explication de comment cette dépense permettra de divertir ou agrandir la communauté",
-                    "Si le snapshot concerne Le Musée, identifier clairement un NFT (ou plusieurs) ainsi que les avantages de le posséder",
-                    "Atteindre un quorum de 100",
-                  ].map((text, index) => (
+                  {snapshotRules.map((text, index) => (
                     <li
                       className="flex items-start py-4 first:pt-0 last:pb-0"
                       key={index}
@@ -143,12 +143,15 @@ export default async function Treasuries() {
                     </li>
                   ))}
                 </ul>
-                <a
+                {/* <a
                   className="text-zinc-200 text-lg lg:text-xl hover:underline font-black"
                   href="https://snapshot.org/#/eboos.eth/create/0"
                 >
                   Rédige un snapshot
-                </a>
+                </a> */}
+                <div>
+                  <a href="https://snapshot.org/#/eboos.eth/create/0" target={"_blank"} className="text-xl scale-110 rounded-lg px-4 py-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-blue-100 duration-300 shadow-lg shadow-blue-500/50">Rédige un snapshot</a>
+                </div>
               </div>
             </div>
           </div>

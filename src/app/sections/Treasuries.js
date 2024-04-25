@@ -24,8 +24,8 @@ function TreasuryWallet({ href, address, value }) {
 export default function Treasuries() {
   return (
     <>
-      <div className="px-8">
-        <div className="text-center flex items-center flex-col mx-auto mb-8 lg:mb-16">
+      <div className="px-8 max-w-screen-xl mx-auto">
+        <div className="text-center flex items-center flex-col mb-8 lg:mb-16">
           <div className="text-zinc-200 text-4xl lg:text-6xl font-black mb-4 lg:mb-8 max-w-sm md:max-w-none">
             C&apos;est la communauté qui décide
           </div>
@@ -35,7 +35,7 @@ export default function Treasuries() {
         </div>
         <div className="w-full gap-8">
           <div className="bg-gradient-to-br from-blue-700 to-indigo-500 rounded-2xl p-12 lg:p-16 text-rose-50 space-y-4 lg:space-y-8 shadow-2xl shadow-indigo-600/50">
-            <div className="space-y-2">
+            <div className="flex flex-row items-end space-x-2">
               <Heading2>La Trésorerie</Heading2>
               <TreasuryWallet
                 address="0xCe4...4864"
