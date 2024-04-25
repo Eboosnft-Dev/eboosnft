@@ -83,7 +83,9 @@ export default async function Home() {
             découvrir le fabuleux  monde des NFT par le biais d&apos;un projet
             pas trop cher encadré par une communauté bienveillante.
           </div>
-          <a href="https://opensea.io/collection/eboos" target={"_blank"} className="text-xl mx-auto rounded-lg px-4 py-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-blue-100 duration-300 shadow-lg shadow-blue-500/50">Acheter un Eboo</a>
+          <div>
+            <a href="https://opensea.io/collection/eboos" target={"_blank"} className="text-xl mx-auto rounded-lg px-4 py-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-blue-100 duration-300 shadow-lg shadow-blue-500/50">Acheter un Eboo</a>
+          </div>
         </div>
       </div>
       <div className="px-8 lg:text-center">
@@ -101,12 +103,9 @@ export default async function Home() {
               marché secondaire au prix du marché, celui-ci est fixé par les
               revendeurs.
             </div>
-            <a
-              className="text-zinc-200 text-lg lg:text-xl hover:underline font-black"
-              href="https://opensea.io/collection/eboos"
-            >
-              Achète un Eboo
-            </a>
+            <div>
+              <a href="https://opensea.io/collection/eboos" target={"_blank"} className="text-xl rounded-lg px-4 py-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-blue-100 duration-300 shadow-lg shadow-blue-500/50">Acheter un Eboo</a>
+            </div>
             <div className="text-center flex flex-col items-center pt-8">
               <div className="text-6xl xl:text-8xl font-black text-indigo-400 mb-2">
                 {eboosMetadata?.openSea?.floorPrice}Ξ
