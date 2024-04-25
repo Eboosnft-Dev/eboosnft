@@ -146,11 +146,11 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <EschatologyOfDeath />
       <LastSales />
       <Treasuries />
       <History />
       <Snapshots />
+      <EschatologyOfDeath />
       {/* <Guild /> */}
     </div>
   );
