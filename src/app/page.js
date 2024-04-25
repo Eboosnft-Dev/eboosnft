@@ -60,12 +60,6 @@ export default async function Home() {
           Ce sera probablement ton premier NFT mais certainement pas ton
           dernier...
         </div>
-        {/* <a
-          className="text-zinc-200 text-lg lg:text-xl hover:underline font-black"
-          href="https://opensea.io/collection/eboos"
-        >
-          Acheter un Eboo
-        </a> */}
         <a href="https://opensea.io/collection/eboos" target={"_blank"} className="text-xl scale-110 rounded-lg px-4 py-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-blue-100 duration-300 shadow-lg shadow-blue-500/50">Acheter un Eboo</a>
       </div>
       <div className="px-8 sm:max-w-screen-sm lg:max-w-screen-lg mx-auto lg:grid grid-cols-12 gap-16">
@@ -89,12 +83,7 @@ export default async function Home() {
             découvrir le fabuleux  monde des NFT par le biais d&apos;un projet
             pas trop cher encadré par une communauté bienveillante.
           </div>
-          <a
-            className="text-zinc-200 text-lg lg:text-xl hover:underline font-black"
-            href="https://opensea.io/collection/eboos"
-          >
-            Découvre la collection
-          </a>
+          <a href="https://opensea.io/collection/eboos" target={"_blank"} className="text-xl mx-auto rounded-lg px-4 py-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-blue-100 duration-300 shadow-lg shadow-blue-500/50">Acheter un Eboo</a>
         </div>
       </div>
       <div className="px-8 lg:text-center">
