@@ -281,7 +281,7 @@ export default async function History() {
           <div className="text-xl lg:text-2xl">
             EboosTrack #2 enregistrer au studio Grand Paris
           </div>
-          <iframe src="https://open.spotify.com/embed/album/7tCkBnFVsKYiOzH2UtBA8E?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe src="https://open.spotify.com/embed/album/7tCkBnFVsKYiOzH2UtBA8E?utm_source=generator" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </HistoryMilestone>
         <HistoryMilestone
           date="25 Aout 2023"
