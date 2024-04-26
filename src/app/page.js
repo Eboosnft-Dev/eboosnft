@@ -11,7 +11,7 @@ import PrivateClub from "./sections/PrivateClub"
 
 export default async function Home() {
   return (
-    <div>
+    <div className="container mx-auto">
       <div className="flex flex-col gap-16 lg:gap-32">
         <Header/>
         <Description/>
