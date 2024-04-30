@@ -21,18 +21,6 @@ const getContractMetadata = async () => {
   }
 };
 
-// const getContractMetadata = async (contractAddress) => {
-//   try {
-//     const res = await fetch(
-//       `https://eth-mainnet.g.alchemy.com/nft/v2/${process.env.ALCHEMY_API_KEY}/getContractMetadata?contractAddress=${contractAddress}`
-//     );
-//     const json = await res.json();
-//     return json.contractMetadata;
-//   } catch (e) {
-//     return {};
-//   }
-// };
-
 export default async function Footer() {
   const eboosMetadata = await getContractMetadata()
 
