@@ -25,13 +25,13 @@ function HistoryMilestone({ children, date, title }) {
 }
 
 export default async function History() {
-  const data = await getZoraData();
+  // const data = await getZoraData();
 
-  if (!data || !data.firstMints) {
-    return <div>Données indisponibles.</div>;
-  }
+  // if (!data || !data.firstMints) {
+  //   return <div>Données indisponibles.</div>;
+  // }
 
-  const { firstMints } = data;
+  // const { firstMints } = data;
 
   return (
     <div>
@@ -79,7 +79,7 @@ export default async function History() {
             Pour remercier les premiers supporteurs du projet, le prix de mint
             commence à 0.001Ξ et augmente légèrement chaque jour.
           </div>
-          <div className="grid grid-cols-4 gap-4 pt-4">
+          {/* <div className="grid grid-cols-4 gap-4 pt-4">
             {firstMints.nodes.map((node) => (
               // <pre key={node.token.tokenId}>{JSON.stringify(node, null, 2)}</pre>
               <a
@@ -95,7 +95,7 @@ export default async function History() {
                 />
               </a>
             ))}
-          </div>
+          </div> */}
           <div className=" text-zinc-500 text-base text-center">
             Les 16 premiers Eboos de la collection
           </div>

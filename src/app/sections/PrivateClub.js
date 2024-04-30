@@ -5,22 +5,36 @@ import {
   faMoneyBillWave,
 } from "@fortawesome/free-solid-svg-icons";
 
-const getContractMetadata = async (contractAddress) => {
+const getContractMetadata = async () => {
+  const options = {
+    method: 'GET',
+    headers: {accept: 'application/json', 'X-API-KEY': process.env.SIMPLEHASH_API}
+  };
+
   try {
-    const res = await fetch(
-      `https://eth-mainnet.g.alchemy.com/nft/v2/${process.env.ALCHEMY_API_KEY}/getContractMetadata?contractAddress=${contractAddress}`
-    );
+    const res = await fetch('https://api.simplehash.com/api/v0/nfts/collections/ethereum/0xA52863eeF886b51182aBfD8FB2A6Bb96Bbe92699?limit=50', options)
     const json = await res.json();
-    return json.contractMetadata;
-  } catch (e) {
-    return {};
+    return json.collections[0]
+  } catch (error) {
+    console.log(error)
+    return error
   }
 };
 
+// const getContractMetadata = async (contractAddress) => {
+//   try {
+//     const res = await fetch(
+//       `https://eth-mainnet.g.alchemy.com/nft/v2/${process.env.ALCHEMY_API_KEY}/getContractMetadata?contractAddress=${contractAddress}`
+//     );
+//     const json = await res.json();
+//     return json.contractMetadata;
+//   } catch (e) {
+//     return {};
+//   }
+// };
+
 export default async function Footer() {
-  const eboosMetadata = await getContractMetadata(
-    process.env.EBOOS_CONTRACT_ADDRESS
-  );
+  const eboosMetadata = await getContractMetadata()
 
   return (
     <div className="px-8 lg:text-center">
@@ -39,11 +53,12 @@ export default async function Footer() {
             revendeurs.
           </div>
           <div>
-            <a href="https://opensea.io/collection/eboos" target={"_blank"} className="text-xl rounded-lg px-4 py-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-blue-100 duration-300 shadow-lg shadow-blue-500/50">Acheter un Eboo</a>
+            <a href="https://opensea.io/collection/eboos" target={"_blank"} className="text-xl mx-auto rounded-lg px-4 py-2 bg-blue-500 text-white">Acheter un Eboo</a>
           </div>
+          {/* <pre>{JSON.stringify(eboosMetadata.floor_prices, null, 2) }</pre> */}
           <div className="text-center flex flex-col items-center pt-8">
             <div className="text-6xl xl:text-8xl font-black text-indigo-400 mb-2">
-              {eboosMetadata?.openSea?.floorPrice}Ξ
+              {(eboosMetadata.floor_prices.find(fp => fp.marketplace_id === "opensea").value / 1e18).toFixed(3)}Ξ
             </div>
             <div className="text-sm uppercase py-2 px-3 text-indigo-400 border-2 border-indigo-400 rounded-full">
               Prix plancher

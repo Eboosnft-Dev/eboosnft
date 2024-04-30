@@ -30,11 +30,11 @@ export default function EschatologyOfDeath() {
           </div>
           <a
             className="text-zinc-200 text-lg lg:text-xl flex hover:underline font-black"
-            href="https://mint.fun/0x6C72accA401c4EaE5eB21a9EEba87EFf150959d6"
+            href="https://opensea.io/collection/eschatology-of-death"
+            target={"_blank"}
           >
-            Mint un NFT
+            Acheter sur le marché secondaire
           </a>
-          <div className="text-red-300">1 mint / wallet</div>
         </div>
         <div></div>
       </div>

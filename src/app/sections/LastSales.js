@@ -2,8 +2,25 @@ import Image from "next/image";
 import getSales from "../../components/getSales";
 import tokens from "../../tokens.json";
 
+const getLastSales = async () => {
+  const options = {
+    method: 'GET',
+    headers: {accept: 'application/json', 'X-API-KEY': process.env.SIMPLEHASH_API}
+  };
+
+  try {
+    const res = await fetch('https://api.simplehash.com/api/v0/nfts/transfers/ethereum/0xA52863eeF886b51182aBfD8FB2A6Bb96Bbe92699?include_nft_details=1&exclude_self_transfers=0&only_sales=1&order_by=timestamp_desc&limit=16', options)
+    const json = await res.json();
+    return json.transfers
+  } catch (error) {
+    console.log(error)
+    return error
+  }
+};
+
 export default async function LastSales() {
-  const data = await getSales();
+  // const data = await getSales();
+  const lastSales = await getLastSales()
 
   function getHash(tokenId) {
     const START_INDEX = 1336;
@@ -13,12 +30,11 @@ export default async function LastSales() {
     return eboo.hash
   }
 
-  if (!data || !data.nftSales) {
-    return <div>Données indisponibles.</div>;
-  }
+  // if (!data || !data.nftSales) {
+  //   return <div>Données indisponibles.</div>;
+  // }
 
-  const { nftSales } = data;
-
+  // const { nftSales } = data;
   return (
     <div>
       <div className="text-center flex items-center flex-col mx-auto mb-8 lg:mb-16 px-8">
@@ -26,27 +42,27 @@ export default async function LastSales() {
           Les dernières ventes
         </div>
       </div>
+      {/* <div className="w-full flex gap-8 snap-x overflow-x-auto px-8 scrollbar-hide">
+        <pre className="text-zinc-300 text-sm">{ JSON.stringify(lastSales, null, 2) }</pre>
+      </div> */}
       <div className="w-full flex gap-8 snap-x overflow-x-auto px-8 scrollbar-hide">
-      {/* <pre className="text-zinc-300 text-sm">
-          {JSON.stringify(nftSales, null, 2)}
-        </pre> */}
-        {nftSales.map((node) => (
+        {lastSales.map((node) => (
           <a
-            key={`${node.metadata.tokenId}${node.sellerFee.amount}`}
+            key={`${node.nft_id}`}
             className="h-64 w-64 md:h-72 md:w-72 snap-center md:snap-start md:scroll-ml-16 shrink-0 relative"
-            href={`https://opensea.com/assets/ethereum/${process.env.EBOOS_CONTRACT_ADDRESS}/${node.metadata.tokenId}`}
+            href={`https://opensea.com/assets/ethereum/${process.env.EBOOS_CONTRACT_ADDRESS}/${node.token_id}`}
           >
             <Image
               className="h-full rounded-xl flex-shrink-0 bg-zinc-700"
               width={1024}
               height={1024}
-              alt={`Eboo #${node.metadata.tokenId}`}
-              src={`https://ipfs.io/ipfs/${getHash(node.metadata.tokenId)}`}
+              alt={`Eboo #${node.token_id}`}
+              src={`https://ipfs.io/ipfs/${getHash(node.token_id)}`}
             />
             <div className="absolute bottom-4 right-4 bg-zinc-800 text-zinc-300 px-2 py-1 rounded text-sm shadow-lg">
-              <div>Eboos #{node.metadata.tokenId}</div>
+              <div>Eboos #{node.token_id}</div>
               <div className="text-zinc-500 font-bold">
-                {(parseInt(node.sellerFee.amount) / 1e18).toFixed(3)} {node.sellerFee.symbol}
+                {(node.sale_details.unit_price / 1e18).toFixed(3)} {node.sale_details.payment_token?.symbol}
               </div>
             </div>
           </a>
