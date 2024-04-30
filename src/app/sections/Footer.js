@@ -47,14 +47,14 @@ export default function Footer() {
           </a>
           <div className="flex gap-6 mt-4 items-center sm:justify-center sm:mt-0">
             {socialsMedia.map((media) => (
-              <a key={media.label} href={media.src} target={"_blank"} className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+              <a key={media.label} href={media.src} className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                 <div className="w-8 text-white flex-shrink-0">
                   <FontAwesomeIcon icon={media.icon} />
                 </div>
                 <span className="sr-only">{media.label}</span>
               </a>
             ))}
-            <a href="https://opensea.io/collection/eboos" target={"_blank"} className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://opensea.io/collection/eboos" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <div className="w-8 text-white flex-shrink-0">
                 <img alt="Opensea" className="text-white" src='svg/opensea.svg'></img>
               </div>

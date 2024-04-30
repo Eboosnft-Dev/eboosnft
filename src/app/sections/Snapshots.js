@@ -150,7 +150,7 @@ export default async function Treasuries() {
                   Rédige un snapshot
                 </a> */}
                 <div>
-                  <a href="https://snapshot.org/#/eboos.eth/create/0" target={"_blank"} className="text-xl scale-110 text-xl mx-auto rounded-lg px-4 py-2 bg-blue-500 text-white">Rédige un snapshot</a>
+                  <a href="https://snapshot.org/#/eboos.eth/create/0" className="text-xl scale-110 text-xl mx-auto rounded-lg px-4 py-2 bg-blue-500 text-white">Rédige un snapshot</a>
                 </div>
               </div>
             </div>

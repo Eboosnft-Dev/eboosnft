@@ -53,7 +53,7 @@ export default async function Footer() {
             revendeurs.
           </div>
           <div>
-            <a href="https://opensea.io/collection/eboos" target={"_blank"} className="text-xl mx-auto rounded-lg px-4 py-2 bg-blue-500 text-white">Acheter un Eboo</a>
+            <a href="https://opensea.io/collection/eboos" className="text-xl mx-auto rounded-lg px-4 py-2 bg-blue-500 text-white">Acheter un Eboo</a>
           </div>
           {/* <pre>{JSON.stringify(eboosMetadata.floor_prices, null, 2) }</pre> */}
           <div className="text-center flex flex-col items-center pt-8">

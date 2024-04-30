@@ -19,7 +19,7 @@ export default function Footer() {
         Ce sera probablement ton premier NFT mais certainement pas ton
         dernier...
       </div>
-      <a href="https://opensea.io/collection/eboos" target={"_blank"} className="text-xl scale-110 rounded-lg px-4 py-2 bg-blue-500 text-white">Acheter un Eboo</a>
+      <a href="https://opensea.io/collection/eboos" className="text-xl scale-110 rounded-lg px-4 py-2 bg-blue-500 text-white">Acheter un Eboo</a>
     </div>
   );
 }

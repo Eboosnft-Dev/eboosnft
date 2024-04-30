@@ -31,7 +31,6 @@ export default function EschatologyOfDeath() {
           <a
             className="text-zinc-200 text-lg lg:text-xl flex hover:underline font-black"
             href="https://opensea.io/collection/eschatology-of-death"
-            target={"_blank"}
           >
             Acheter sur le marché secondaire
           </a>
