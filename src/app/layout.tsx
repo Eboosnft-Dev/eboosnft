@@ -14,7 +14,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="bg-slate-900 font-nunito">{children} <Analytics /></body>
+      <body className="bg-slate-900 font-nunito">{children} <Analytics mode={'production'} /></body>
     </html>
   );
 }
