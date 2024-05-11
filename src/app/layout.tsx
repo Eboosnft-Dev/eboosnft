@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function RootLayout({
   children,
@@ -12,7 +13,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="bg-slate-900 font-nunito">{children}</body>
+      <body className="bg-slate-900 font-nunito">{children} <Analytics /></body>
     </html>
   );
 }
